@@ -17,7 +17,8 @@
 - new method `group_data()` (#3489).
 - joins no longer make lazy grouped data (#3566). 
 - new `nest_join()` function. `nest_join()` creates a list column of the matching rows. `nest_join()` + `tidyr::unnest()` is equivalent to `inner_join`  (#3570). 
-- `last_col()` is re-exported from tidyselect (#3584)
+- `last_col()` is re-exported from tidyselect (#3584). 
+- `mutate()` removes a column when the expression evaluates to `NULL` for all groups (#2945).
 
 # dplyr 0.7.5.9001
 
